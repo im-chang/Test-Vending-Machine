@@ -6,7 +6,7 @@ describe("Vending Machine", () => {
   describe("when checking status of stock in inventory", () => {
     it("should return stock of the inventory", () => {
       expect(vendingMachine.getStock()).toEqual({
-        Pepsi: { count: 8 },
+        Pepsi: { count: 0 },
         Coke: { count: 13 },
         "7-Up": { count: 3 },
         "Mountain-Dew": { count: 20 }
@@ -25,6 +25,14 @@ describe("Vending Machine", () => {
           Nickel: { value: 0.05 }
         });
       });
+    });
+  });
+
+  describe("when a drink is out of stock", () => {
+    it("should return drink is out of stock", () => {
+      expect(vendingMachine.outOfStock("Pepsi")).toEqual(
+        "Sorry this drink is out of stock"
+      );
     });
   });
 });
