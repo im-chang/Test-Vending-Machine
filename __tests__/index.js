@@ -13,4 +13,18 @@ describe("Vending Machine", () => {
       });
     });
   });
+
+  describe("Vending Machine", () => {
+    describe("when checking types of coins and the values the machine accepts", () => {
+      it("should return all acceptable coins and their values", () => {
+        expect(vendingMachine.getCoins()).toEqual({
+          Toonie: { value: 2 },
+          Loonie: { value: 1 },
+          Quarter: { value: 0.25 },
+          Dime: { value: 0.1 },
+          Nickel: { value: 0.05 }
+        });
+      });
+    });
+  });
 });
