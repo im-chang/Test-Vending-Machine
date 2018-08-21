@@ -6,7 +6,7 @@ Test-Vending-Machine's purpose is to test the functionalities of the vending mac
 
 # ScreenShot of Tests done:
 
-![Imgur Image](https://imgur.com/a/WuKeNsR)
+![Alt text](https://imgur.com/a/WuKeNsR "Optional title")
 
 # Technologies Used:
 
