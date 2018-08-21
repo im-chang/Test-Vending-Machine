@@ -61,4 +61,26 @@ describe("Vending Machine", () => {
       );
     });
   });
+
+  describe("when bills are used", () => {
+    it("should return sorry bills are not accepted", () => {
+      expect(vendingMachine.censorCash(2)).toEqual(2);
+    });
+  });
+
+  describe("when user selects a drink", () => {
+    it("should return drink is in stock", () => {
+      expect(vendingMachine.buyDrink("Pepsi", 0)).toEqual([
+        "Pepsi",
+        1.5,
+        "In Stock"
+      ]);
+    });
+  });
+
+  describe("when user puts in cash and makes a selection", () => {
+    it("should return change", () => {
+      expect(vendingMachine.dispenseChange("Pepsi", 1.85)).toEqual(["0.35"]);
+    });
+  });
 });
