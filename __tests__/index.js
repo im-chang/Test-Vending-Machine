@@ -35,4 +35,13 @@ describe("Vending Machine", () => {
       );
     });
   });
+
+  describe("when inventory is refilled", () => {
+    it("should return name of drink refilled and new quantity", () => {
+      expect(vendingMachine.insertDrink("Pepsi", 7)).toEqual({
+        name: "Pepsi",
+        count: 7
+      });
+    });
+  });
 });
