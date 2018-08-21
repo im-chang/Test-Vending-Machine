@@ -53,4 +53,12 @@ describe("Vending Machine", () => {
       });
     });
   });
+
+  describe("when bills are used", () => {
+    it("should return sorry bills are not accepted", () => {
+      expect(vendingMachine.censorCash(10)).toEqual(
+        "Only Coins Accepted Sorry"
+      );
+    });
+  });
 });
