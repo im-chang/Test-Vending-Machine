@@ -44,4 +44,13 @@ describe("Vending Machine", () => {
       });
     });
   });
+
+  describe("when coins is resupplied", () => {
+    it("should return name of coin resupplied and new count", () => {
+      expect(vendingMachine.resupplyChange("Loonie", 30)).toEqual({
+        name: "Loonie",
+        count: 39
+      });
+    });
+  });
 });
