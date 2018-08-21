@@ -83,4 +83,12 @@ describe("Vending Machine", () => {
       expect(vendingMachine.dispenseChange("Pepsi", 1.85)).toEqual(["0.35"]);
     });
   });
+
+  describe("when user puts in cash and makes a selection", () => {
+    it("should return change", () => {
+      expect(vendingMachine.dispenseChange("Pepsi", 1.35)).toEqual(
+        "Please insert more money"
+      );
+    });
+  });
 });
