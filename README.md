@@ -6,7 +6,7 @@ Test-Vending-Machine's purpose is to test the functionalities of the vending mac
 
 # ScreenShot of Tests done:
 
-![Alt text](https://imgur.com/a/WuKeNsR "Optional title")
+<img width="549" alt="screen shot 2018-08-21 at 4 18 06 pm" src="https://user-images.githubusercontent.com/38142960/44477209-d807f600-a5ee-11e8-993e-f97ea7accb85.png">
 
 # Technologies Used:
 
